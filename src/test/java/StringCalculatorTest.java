@@ -25,4 +25,15 @@ class StringCalculatorTest {
         //then
         Assertions.assertThat(result).isEqualTo(1);
     }
+
+    @DisplayName("Should return the value of the number it's given")
+    @Test
+    void test03(){
+        //given
+        String givenNumbersInString ="2";
+        //when
+        int result = StringCalculator.add(givenNumbersInString);
+        //then
+        Assertions.assertThat(result).isEqualTo(2);
+    }
 }
