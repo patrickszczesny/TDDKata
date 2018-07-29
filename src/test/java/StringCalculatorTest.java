@@ -34,6 +34,17 @@ class StringCalculatorTest {
         //then
         Assertions.assertThat(resultOfSum).isEqualTo(100000);
     }
+
+    @DisplayName("Should return sum of 2 number if given 2 number in String")
+    @Test
+    void test04() {
+        //given
+        String numbersInString = "1,2";
+        //when
+        int resultOfSum = StringCalculator.Add(numbersInString);
+        //then
+        Assertions.assertThat(resultOfSum).isEqualTo(3);
+    }
 }
 
 
