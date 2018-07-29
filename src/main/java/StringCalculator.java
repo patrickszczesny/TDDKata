@@ -6,7 +6,12 @@ class StringCalculator {
         }
         String[] stringTable=numbersInString.split(",");
         if (stringTable.length>1) {
-            return Integer.parseInt(stringTable[0]) + Integer.parseInt(stringTable[1]);
+            int result=0;
+
+            for (int i = 0; i < stringTable.length; i++) {
+               result+= Integer.parseInt(stringTable[i]);
+            }
+            return result;
         }
         return Integer.parseInt(numbersInString);
     }
