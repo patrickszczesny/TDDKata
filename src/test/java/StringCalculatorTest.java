@@ -66,6 +66,28 @@ class StringCalculatorTest {
         //then
         Assertions.assertThat(resultOfSum).isEqualTo(55);
     }
+
+    @DisplayName("Should return sum of 10 number if given 10 number in String")
+    @Test
+    void test07() {
+        //given
+        String numbersInString = "1,2,3,4,5,6,7,8,9,10";
+        //when
+        int resultOfSum = StringCalculator.Add(numbersInString);
+        //then
+        Assertions.assertThat(resultOfSum).isEqualTo(55);
+    }
+
+    @DisplayName("Should return sum of 2 number if given in String and seperate with '\n")
+    @Test
+    void test08() {
+        //given
+        String numbersInString = "1\n2";
+        //when
+        int resultOfSum = StringCalculator.Add(numbersInString);
+        //then
+        Assertions.assertThat(resultOfSum).isEqualTo(3);
+    }
 }
 
 
