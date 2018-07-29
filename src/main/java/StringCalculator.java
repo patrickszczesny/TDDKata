@@ -5,8 +5,9 @@ class StringCalculator {
            return 0;
         }
         String[] stringTable=numbersInString.split(",");
-
-        return Integer.parseInt(stringTable[0])+Integer.parseInt(stringTable[1]);
-
+        if (stringTable.length>1) {
+            return Integer.parseInt(stringTable[0]) + Integer.parseInt(stringTable[1]);
+        }
+        return Integer.parseInt(numbersInString);
     }
 }
