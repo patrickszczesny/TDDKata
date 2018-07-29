@@ -78,15 +78,15 @@ class StringCalculatorTest {
         Assertions.assertThat(resultOfSum).isEqualTo(55);
     }
 
-    @DisplayName("Should return sum of 2 number if given in String and seperate with '\n")
+    @DisplayName("Should return sum of 3 number if given in String and seperate with '\n and ,")
     @Test
     void test08() {
         //given
-        String numbersInString = "1\n2";
+        String numbersInString = "1\n2,3";
         //when
         int resultOfSum = StringCalculator.Add(numbersInString);
         //then
-        Assertions.assertThat(resultOfSum).isEqualTo(3);
+        Assertions.assertThat(resultOfSum).isEqualTo(6);
     }
 }
 
