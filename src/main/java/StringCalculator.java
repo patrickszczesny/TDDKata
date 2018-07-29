@@ -1,6 +1,7 @@
 class StringCalculator {
 
     public static int Add(String numbersInString) {
-        return 0;
+
+        return Integer.parseInt(numbersInString);
     }
 }
