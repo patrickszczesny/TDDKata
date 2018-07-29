@@ -4,6 +4,9 @@ class StringCalculator {
         if( numbersInString.isEmpty()){
            return 0;
         }
-        return Integer.parseInt(numbersInString);
+        String[] stringTable=numbersInString.split(",");
+
+        return Integer.parseInt(stringTable[0])+Integer.parseInt(stringTable[1]);
+
     }
 }
