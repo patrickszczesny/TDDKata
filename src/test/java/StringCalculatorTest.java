@@ -101,6 +101,16 @@ class StringCalculatorTest {
         //then
         Assertions.assertThat(resultOfSum).isEqualTo(6);
     }
+    @DisplayName("Should return 10 if given 2 number 1,2\n3,4 in String")
+    @Test
+    void test010() {
+        //given
+        String numbersInString = "1,2\n3,4";
+        //when
+        int resultOfSum = StringCalculator.Add(numbersInString);
+        //then
+        Assertions.assertThat(resultOfSum).isEqualTo(10);
+    }
 }
 
 
