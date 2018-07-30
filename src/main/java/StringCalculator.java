@@ -6,7 +6,11 @@ class StringCalculator {
         }
         String[] numbersInStringInTable = numbersInString.split(",");
         if(numbersInStringInTable.length>1){
-            return Integer.parseInt(numbersInStringInTable[0])+ Integer.parseInt(numbersInStringInTable[1]);
+            int result=0;
+            for (int i = 0; i < numbersInStringInTable.length; i++) {
+                result+=Integer.parseInt(numbersInStringInTable[i]);
+            }
+            return result;
         }
         return Integer.parseInt(numbersInString);
     }
