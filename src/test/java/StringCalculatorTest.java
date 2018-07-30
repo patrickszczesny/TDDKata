@@ -1,6 +1,6 @@
 import org.assertj.core.api.Assertions;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
 class StringCalculatorTest {
 
@@ -25,6 +25,7 @@ class StringCalculatorTest {
         //then
         Assertions.assertThat(resultOfSum).isEqualTo(1);
     }
+
     @DisplayName("Should return 33 if given 33 in String")
     @Test
     void test03() {
@@ -46,6 +47,7 @@ class StringCalculatorTest {
         //then
         Assertions.assertThat(resultOfSum).isEqualTo(3);
     }
+
     @DisplayName("Should return 10 if given two number 7,3 in String")
     @Test
     void test05() {
@@ -67,6 +69,7 @@ class StringCalculatorTest {
         //then
         Assertions.assertThat(resultOfSum).isEqualTo(6);
     }
+
     @DisplayName("Should return 10 if given 10 number 1,1,1,1,1,1,1,1,1,1 in String")
     @Test
     void test07() {
@@ -77,6 +80,7 @@ class StringCalculatorTest {
         //then
         Assertions.assertThat(resultOfSum).isEqualTo(10);
     }
+
     @DisplayName("Should return 3 if given 2 number 1\n2 in String")
     @Test
     void test08() {
