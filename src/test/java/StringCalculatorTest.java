@@ -25,6 +25,16 @@ class StringCalculatorTest {
         //then
         Assertions.assertThat(resultOfSum).isEqualTo(1);
     }
+    @DisplayName("Should return 33 if given 33 in String")
+    @Test
+    void test03() {
+        //given
+        String numbersInString = "33";
+        //when
+        int resultOfSum = StringCalculator.Add(numbersInString);
+        //then
+        Assertions.assertThat(resultOfSum).isEqualTo(33);
+    }
 }
 
 
