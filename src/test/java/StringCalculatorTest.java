@@ -46,6 +46,16 @@ class StringCalculatorTest {
         //then
         Assertions.assertThat(resultOfSum).isEqualTo(3);
     }
+    @DisplayName("Should return 10 if given two number 7,3 in String")
+    @Test
+    void test05() {
+        //given
+        String numbersInString = "7,3";
+        //when
+        int resultOfSum = StringCalculator.Add(numbersInString);
+        //then
+        Assertions.assertThat(resultOfSum).isEqualTo(10);
+    }
 }
 
 
