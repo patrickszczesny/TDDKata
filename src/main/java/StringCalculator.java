@@ -1,5 +1,5 @@
 class StringCalculator {
      static int Add(String numberInString) {
-        return 1;
+        return Integer.parseInt(numberInString);
     }
 }
