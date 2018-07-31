@@ -6,7 +6,13 @@ class StringCalculator {
         if (numberInString.isEmpty()) {
             return 0;
         }
-        String[] stringNumbersInForOfListOfStrings = numberInString.split(",");
+        String delimiter =",";
+
+        if (numberInString.startsWith("//")){
+        delimiter = String.valueOf(numberInString.charAt(3));
+        }
+
+        String[] stringNumbersInForOfListOfStrings = numberInString.split(delimiter);
         List<String[]> listOfStringTables = new ArrayList<>();
         for (String stringNumbersInForOfListOfString : stringNumbersInForOfListOfStrings) {
             listOfStringTables.add(stringNumbersInForOfListOfString.split("\n"));
