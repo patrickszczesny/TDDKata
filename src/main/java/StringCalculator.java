@@ -6,13 +6,13 @@ class StringCalculator {
         if (numberInString.isEmpty()) {
             return 0;
         }
-        String delimiter =",";
 
         if (numberInString.startsWith("//")){
-        delimiter = String.valueOf(numberInString.charAt(3));
+        String delimiter = String.valueOf(numberInString.charAt(2));
+        return StringCalculator.Add(numberInString.substring(4).replace(delimiter,","));
         }
 
-        String[] stringNumbersInForOfListOfStrings = numberInString.split(delimiter);
+        String[] stringNumbersInForOfListOfStrings = numberInString.split(",");
         List<String[]> listOfStringTables = new ArrayList<>();
         for (String stringNumbersInForOfListOfString : stringNumbersInForOfListOfStrings) {
             listOfStringTables.add(stringNumbersInForOfListOfString.split("\n"));
