@@ -55,6 +55,16 @@ class StringCalculatorTest {
         //then
         Assertions.assertThat(result).isEqualTo(6);
     }
+    @DisplayName("The method Add Should return 3 in the result if given 1\n2  in String")
+    @Test
+    void test06() {
+        //given
+        String numberInString="1\n2";
+        //when
+        int result= StringCalculator.Add(numberInString);
+        //then
+        Assertions.assertThat(result).isEqualTo(3);
+    }
 }
 
 
