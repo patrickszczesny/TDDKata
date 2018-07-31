@@ -10,9 +10,19 @@ class StringCalculatorTest {
         //given
         String numberInString="";
         //when
-       int result= StringCalculator.Add(numberInString);
+        int result= StringCalculator.Add(numberInString);
         //then
-Assertions.assertThat(result).isEqualTo(0);
+        Assertions.assertThat(result).isEqualTo(0);
+    }
+    @DisplayName("The method Add Should return the number 1 in int when given 1 in String")
+    @Test
+    void test02() {
+        //given
+        String numberInString="1";
+        //when
+        int result= StringCalculator.Add(numberInString);
+        //then
+        Assertions.assertThat(result).isEqualTo(1);
     }
 
 }
